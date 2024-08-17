@@ -15,8 +15,8 @@ Before you begin, ensure you have met the following requirements:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd spaarks-backend
+git clone https://github.com/sreeja3232/Spaarks
+cd Spaarks
 ```
 
 ### 2. Install Dependencies
@@ -56,13 +56,13 @@ Once the server is running, you can access the API at `http://localhost:3000`.
 ### 1. Build the Docker Image
 
 ```bash
-docker build -t spaarks-backend .
+docker build -t Spaarks .
 ```
 
 ### 2. Run the Docker Container
 
 ```bash
-docker run -d -p 3000:3000 --name spaarks-backend-container spaarks-backend
+docker run -d -p 3000:3000 --name Spaarks-container Spaarks
 ```
 
 ### 3. Access the Application
@@ -74,8 +74,8 @@ The application will be available at `http://localhost:3000`.
 To stop and remove the Docker container:
 
 ```bash
-docker stop spaarks-backend-container
-docker rm spaarks-backend-container
+docker stop Spaarks-container
+docker rm Spaarks-container
 ```
 
 ## API Endpoints
@@ -87,8 +87,8 @@ docker rm spaarks-backend-container
   - Request Body:
     ```json
     {
-      "username": "testuser",
-      "password": "testpassword"
+      "username": "user",
+      "password": "password"
     }
     ```
 
@@ -97,8 +97,8 @@ docker rm spaarks-backend-container
   - Request Body:
     ```json
     {
-      "username": "testuser",
-      "password": "testpassword"
+      "username": "user",
+      "password": "password"
     }
     ```
 
